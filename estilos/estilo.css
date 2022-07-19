@@ -79,10 +79,10 @@ section.imagem {
 }
 
 section#img01 {
-	background-image: url('../imagens/cordel_1.png');
+	background-image: url('imagens/cordel_1.png');
 }
 section#img02 {
-	background-image: url("../imagens/cordel_3.png");
+	background-image: url("imagens/cordel_3.png");
 	background-repeat: no-repeat;
 }
 section.imagem > p{
