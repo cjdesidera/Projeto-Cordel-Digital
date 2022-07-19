@@ -1,0 +1,107 @@
+@charset "UTF-9";
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
+</style>
+
+@font-face {
+	font-family: Sriracha;
+	src: url("C:\Users\cesar.neto\Desktop\ESTUDOS\HTML+CSS\DESAFIO_12\fonts\sriracha\Sriracha-Regular.ttf")
+}
+
+:root {
+	--fonte1: Verdana, Geneva, Tahoma, sans-serif;
+	--fonte2: 'Passion One', cursive;
+	--fonte3: 'Sriracha', cursive;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+iframe {
+	diplay: block;
+	background-color: black;
+	width: 100vw;
+}
+
+html, body {
+	min-height: 100vh;
+	background-color: lightgray;
+	font-family: var(--fonte1);
+}
+
+header {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+header > h1 {
+	padding-top: 50px;
+	font-variant: small-caps;
+	font-family: var(--fonte2);
+	font-size: 10vw;
+}
+header > p {
+	padding-bottom: 50px;
+}
+header a, footer a {
+	color: white;
+	text-decoration: none;
+	font-weight: bolder;
+}
+ header a:hover, footer a:hover {
+	text-decoration: underline;
+}
+
+section{
+	position: relative;
+	margin-left: 0px;
+	padding: 10vh 10vh;
+	line-height: 4vw;
+	padding-left: 30px;
+	font-family: var(--fonte3);
+	font-size: 3vw;
+}
+section.normal {
+	background-color: white;
+	color: black;
+}
+section.imagem {
+	margin-left: -30px;
+	margin-right: -100px;
+	background-color: #C0C0C0;
+	color: white;
+	box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.25);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+section#img01 {
+	background-image: url('../imagens/cordel_1.png');
+}
+section#img02 {
+	background-image: url("../imagens/cordel_3.png");
+	background-repeat: no-repeat;
+}
+section.imagem > p{
+	display: inline-blck;
+	background-color: rgba(0,0,0,0.2);
+	padding: 5vh;
+	text-shadow: 1px;
+}
+
+footer {
+	border: solid rgba(0,0,0,0.15);
+	width: 98vw;
+	margin-left: -30px;
+	margin-right: -30px;
+	padding: 10px 15px;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+footer > p {
+	padding-bottom: 50px;
+}
